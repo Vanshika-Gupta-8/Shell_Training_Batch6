@@ -1,0 +1,22 @@
+Azure storage types 
+Azure Blob storage
+Azure data lake gen2 storage
+containers 
+File sharing
+Queue
+Tables
+Creating Azure data lake gen2 storage
+Copying data
+Data Factories
+AZURE DATA FACTORY(ADF)
+ETL - Extract,transform and load or ELT
+azure databricks(ADB) - transformation
+ADF - data orchestration
+ADF components : 
+Integration runtime (IR)- server level
+Linked services - Path or location of file
+Datasets - acces file
+IR types:
+Azure auto resolved (default) - if hosted on azure service
+self hosted - on premise (when we're on a virtual environment,not on cloud)
+Azure SSIS - SQL server intergration system (to run existing SSIS package on azure)

@@ -1,0 +1,25 @@
+CUSTOM IDA
+
+Topics covered:
+ - Various access methods
+	- Access keys
+	- Shared Access Signature
+	- Identity Access Management
+ - Discussion about the various tools used by data engineers
+ - Introduction to Azure Data Factory
+ - The various activities involved in data engineering
+	- Extract
+	- Transform
+	- Load
+ - Components of ADF:
+	- Pipeline
+	- Activities
+	- Datasets
+	- Linked Services
+	- Integration Runtime
+	- Data Flow
+ - Types of Integration Runtime
+	- Azure Auto Resolve
+	- Self Hosted
+	- Azure SSIS
+	- Airflow (Preview)

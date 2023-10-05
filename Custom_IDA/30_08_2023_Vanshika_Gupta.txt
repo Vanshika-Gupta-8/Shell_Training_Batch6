@@ -1,0 +1,30 @@
+Big Data Fundamentals
+
+Topics covered:
+- How to process big data?
+- How stream analytics help e-commerce businesses?
+- 4 V's -> veracity, volume, velocity, variety
+- data warehouse
+- data lake
+- lakehouse
+- types of cloud
+   -> private
+   -> public
+   -> hybrid
+- cloud benefits and services
+   -> IaaS
+   -> PaaS
+   -> SaaS
+- various azure certifications
+- Component based model
+- Capital Expenditure (CapEx)
+- Operational Expenditure (OpEx)
+- Shared responsibility model
+- Serverless Computing
+- Azure Architecture: 
+	Region
+	Region Pair
+ 	Availability Zones 
+	Azure Subscription
+	Azure Resource Manager
+	Azure resources

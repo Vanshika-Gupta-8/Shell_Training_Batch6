@@ -1,0 +1,13 @@
+Custom IDA
+
+Topics covered: (Practically)
+- Intro to sql
+- Schemas 
+- DDL Statements
+- Constraints
+- ER Modelling
+- DCL
+- DML
+- Order of Execution
+- Filtering
+- Grouping data - using Having clause

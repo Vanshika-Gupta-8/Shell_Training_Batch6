@@ -1,0 +1,11 @@
+CUSTOM IDA
+ - Azure SQL Server Elastic Pool 
+ - Joins - left, right, full outer, self, inner, cross
+ - Stored Procedures
+ - Temporary tables
+ - User defined functions - Scaler, Tabular valued
+ - Sub-query 
+ - Union, Union All, Intersect
+ - Indexing - Clustered, non-clustered, columnar stored and Heap
+ - Common Table Expression
+  

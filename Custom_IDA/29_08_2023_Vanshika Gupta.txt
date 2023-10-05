@@ -1,0 +1,224 @@
+29/08/2023                                   CUSTOM TRACK
+                                                 DBMS
+                                              (Session-1)
+
+Topics covered:
+
+1. Data: Raw facts, unorganized, unprocessed information
+Exp.: Marks/result of classes and school
+
+Information: Processing of data, organized
+Exp.: Avg. Marks, Pass % of school
+
+Three types of data:
+* Structured-> (Strictly bounded by schema) Example- tables
+Structured data is the data which conforms to a data model, has a well define structure, follows a consistent order and can be easily accessed and used by a person or a computer program.
+Structured data is usually stored in well-defined schemas such as Databases. It is generally tabular with column and rows that clearly define its attributes.
+
+* Semi-Structured-> (not bounded by schema) Example- json
+Semi-structured data is data that does not conform to a data model but has some structure. It lacks a fixed or rigid schema. It is the data that does not reside in a rational database but that have some organizational properties that make it easier to analyze. With some processes, we can store them in the relational database.
+
+* Unstructured-> Unstructured data is the data which does not conforms to a data model and has no easily identifiable structure such that it can not be used by a computer program easily. Unstructured data is not organised in a pre-defined manner or does not have a pre-defined data model, thus it is not a good fit for a mainstream relational database. Example- media
+
+ 
+
+2. Database (Database Management System [DBMS]): Collection of inter-related data. Set of programs to store and access the data in an easy and effective manner. 
+Database systems are basically developed for large amount of data. When dealing with huge amount of data, there are two things that require optimization: Storage of data and retrieval of data.
+
+* Storage: According to the principles of database systems, the data is stored in such a way that it acquires lot less space as the redundant data (duplicate data) has been removed before storage.
+* Fast Retrieval of data: Along with storing the data in an optimized and systematic manner, it is also important that we retrieve the data quickly when needed. Database systems ensure that the data is retrieved as quickly as possible.
+
+Q. What is the best way to store the data?
+Ans. Save all files as tables.
+
+
+
+Keys play an important role in the relational database.
+It is used to uniquely identify any record or row of data from the table. It is also used to establish and identify relationships between tables.
+
+Types of keys:
+* Primary key-> It is the first key used to identify one and only one instance of an entity uniquely. 
+(unique + not null)
+* Foreign key-> Foreign keys are the column of the table used to point to the primary key of another table. Also, used to maintain referential integrity.
+* Candidate key-> A candidate key is an attribute or set of attributes that can uniquely identify a tuple.
+Except for the primary key, the remaining attributes are considered a candidate key. The candidate keys are as strong as the primary key.
+* Super key-> Super key is an attribute set that can uniquely identify a tuple. A super key is a superset of a candidate key.
+
+
+
+3. ER diagram: The Entity Relational Model is a model for identifying entities to be represented in the database and representation of how those entities are related. The ER data model specifies enterprise schema that represents the overall logical structure of a database graphically. ER models also help improve results and uncover information with ease. Entity-relationship models can also help in Business process re-engineering and modeling new databases.
+
+Why Use ER Diagrams In DBMS?
+* ER diagrams are used to represent the E-R model in a database, which makes them easy to be converted into relations (tables).
+* ER diagrams provide the purpose of real-world modeling of objects which makes them intently useful.
+* ER diagrams require no technical knowledge and no hardware support.
+* These diagrams are very easy to understand and easy to create even for a naive user. 
+* It gives a standard solution for visualizing the data logically.
+
+
+Symbols Used in ER Model:
+ER Model is used to model the logical view of the system from a data perspective which consists of these symbols:
+
+* Rectangles: Rectangles represent Entities in ER Model.
+* Ellipses: Ellipses represent Attributes in ER Model.
+* Diamond: Diamonds represent Relationships among Entities.
+* Lines: Lines represent attributes to entities and entity sets with other relationship types.
+* Double Ellipse: Double Ellipses represent Multi-Valued Attributes.
+* Double Rectangle: Double Rectangle represents a Weak Entity.
+
+Q. Create an ER diagram for the following entities: book, author, customer, order, publisher.
+
+
+
+4. Normalization: (Decomposition of tables)
+* Normalization is the process of organizing the data in the database.
+* It is used to minimize the redundancy from a relation or set of relations. It is also used to eliminate undesirable characteristics like Insertion, Update, and Deletion Anomalies.
+* It divides the larger table into smaller and links them using relationships.
+* The normal form is used to reduce redundancy from the database table.
+
+The main reason for normalizing the relations is removing these anomalies. Failure to eliminate anomalies leads to data redundancy and can cause data integrity and other problems as the database grows. Normalization consists of a series of guidelines that helps to guide you in creating a good database structure.
+Data modification anomalies can be categorized into three types:
+* Insertion Anomaly: Insertion Anomaly refers to when one cannot insert a new tuple into a relationship due to lack of data.
+* Deletion Anomaly: The delete anomaly refers to the situation where the deletion of data results in the unintended loss of some other important data.
+* Updatation Anomaly: The update anomaly is when an update of a single data value requires multiple rows of data to be updated.
+
+
+Types of Normal Forms:
+Normalization works through a series of stages called Normal forms. The normal forms apply to individual relations. The relation is said to be in particular normal form if it satisfies constraints.
+Following are the various types of Normal forms-
+
+Normal Form  Description
+1NF	     A relation is in 1NF if it contains an atomic value.
+2NF	     A relation will be in 2NF if it is in 1NF and all non-key attributes are fully functional dependent on the primary key.
+3NF	     A relation will be in 3NF if it is in 2NF and no transition dependency exists.
+BCNF	     A stronger definition of 3NF is known as Boyce Codd's normal form.
+4NF	     A relation will be in 4NF if it is in Boyce Codd's normal form and has no multi-valued dependency.
+5NF	     A relation is in 5NF. If it is in 4NF and does not contain any join dependency, joining should be lossless.
+
+
+
+5. Denormalization: 
+Denormalization is a database optimization technique in which we add redundant data to one or more tables. This can help us avoid costly joins in a relational database. Basically, The process of taking a normalized schema and making it non-normalized is called denormalization, and designers use it to tune the performance of systems to support time-critical operations.
+
+
+#scalar function
+CREATE FUNCTION dbo.GetSalaryCategory(@salary DECIMAL(10, 2)) RETURNS NVARCHAR(10)
+AS
+BEGIN
+    DECLARE @category NVARCHAR(10)
+    
+    IF @salary > 2000
+        SET @category = 'High'
+    ELSE IF @salary < 1000
+        SET @category = 'Low'
+    ELSE
+        SET @category = 'NA'
+    
+    RETURN @category
+END;
+GO
+
+CREATE TABLE Employee (
+    EmployeeID INT PRIMARY KEY,
+    FirstName NVARCHAR(50),
+    LastName NVARCHAR(50),
+    Salary DECIMAL(10, 2),
+    SalaryCategory NVARCHAR(10)
+);
+
+INSERT INTO Employee (EmployeeID, FirstName, LastName, Salary, SalaryCategory)
+VALUES
+    (1, 'John', 'Doe', 2500.00, dbo.GetSalaryCategory(2500.00)),
+    (2, 'Jane', 'Smith', 800.00, dbo.GetSalaryCategory(800.00)),
+    (3, 'Bob', 'Johnson', 1500.00, dbo.GetSalaryCategory(1500.00)),
+    (4, 'Alice', 'Williams', 3000.00, dbo.GetSalaryCategory(3000.00));
+
+*****************
+Tabled Valued FUcntion
+CREATE FUNCTION dbo.GetEmployeesBySalaryRange (@minSalary DECIMAL(10, 2), @maxSalary DECIMAL(10, 2))
+RETURNS TABLE
+AS
+RETURN (
+    SELECT EmployeeID, FirstName, LastName, Salary
+    FROM Employee
+    WHERE Salary BETWEEN @minSalary AND @maxSalary
+);
+
+select * from [SalesLT].[Product] p 
+inner join
+[SalesLT].[ProductCategory] pc on pc.ProductCategoryID = p.ProductCategoryID
+inner join
+[SalesLT].[SalesOrderDetail] od on od.ProductID = p.ProductID
+
+
+https://drive.google.com/drive/folders/1iXMDFDDcDfj4VcqpY2tC7DMECEHLnVK8?usp=sharing
+
+
+DateTable = 
+ADDCOLUMNS(
+    CALENDAR(DATE(2023,1,1), DATE(2023,12,31)),
+    "Year", YEAR([Date]),
+    "Month Number", MONTH([Date]),
+    "Month Name", FORMAT([Date], "MMMM"),
+    "Quarter", QUARTER([Date]),
+    "Day of Week", WEEKDAY([Date]),
+    "Day Name", FORMAT([Date], "dddd"),
+    "Year-Month", FORMAT([Date], "YYYY-MM")
+)
+
+
+###Script
+
+-- Create the database
+CREATE DATABASE PetroCorpDB;
+GO
+
+-- Use the database
+USE PetroCorpDB;
+GO
+
+-- Create the DrillingRigs table
+CREATE TABLE DrillingRigs (
+    RigID INT PRIMARY KEY,
+    RigName NVARCHAR(50) NOT NULL
+);
+GO
+
+-- Insert sample drilling rigs
+INSERT INTO DrillingRigs (RigID, RigName)
+VALUES
+    (1, 'Rig A'),
+    (2, 'Rig B');
+GO
+
+-- Create the DrillingData table
+CREATE TABLE DrillingData (
+    DataID INT PRIMARY KEY,
+    RigID INT NOT NULL,
+    [Date] DATE NOT NULL,
+    DrilledDepth DECIMAL(10, 2) NOT NULL,
+    DrillingSpeed DECIMAL(10, 2) NOT NULL,
+    OperatingHours DECIMAL(10, 2) NOT NULL,
+    DrillBitChanges INT NOT NULL
+);
+GO
+
+-- Insert sample drilling data
+INSERT INTO DrillingData (DataID, RigID, [Date], DrilledDepth, DrillingSpeed, OperatingHours, DrillBitChanges)
+VALUES
+    (1, 1, '2023-09-01', 100, 20, 10, 1),
+    (2, 1, '2023-09-02', 200, 18, 12, 2),
+    (3, 1, '2023-09-03', 300, 22, 9, 0),
+    (4, 1, '2023-09-04', 400, 19, 11, 1),
+    (5, 1, '2023-09-05', 500, 21, 8, 0),
+    (6, 2, '2023-09-01', 150, 25, 9, 0),
+    (7, 2, '2023-09-02', 250, 24, 10, 1),
+    (8, 2, '2023-09-03', 350, 26, 8, 0),
+    (9, 2, '2023-09-04', 450, 23, 11, 2),
+    (10, 2, '2023-09-05', 550, 27, 7, 0);
+GO
+
+************************************
+
+
+

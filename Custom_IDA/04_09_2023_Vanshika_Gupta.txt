@@ -1,0 +1,24 @@
+CUSTOM IDA
+
+Topics covered:
+ - Azure storage overview
+ - Introduction to Storage Account
+ - Different redundancy options for storage account
+	- Local Redundant Storage (LRS)
+	- Zone Redundant Storage (ZRS)
+	- Geo Redundant Storage (GRS)
+	- Geo Zone Redundant Storage (GZRS)
+ - Read Access/ Read Replicas in Geo and Geo Zone Redundant
+ - Failover conditions
+ - Cross tenant replication
+ - Access Tier 
+	- Hot
+	- Cool
+	- Cold
+	- Archive
+ - Overview of Blob Storage and Gen2 Storage
+ - Azure File Share
+ - Azure tables
+ - Costing
+	- Azure Pricing Calculator
+	- Azure Total Cost of Ownership Calculator

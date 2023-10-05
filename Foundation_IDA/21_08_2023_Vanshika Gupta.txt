@@ -1,0 +1,171 @@
+Introduction to Business Analysis and Agile
+
+
+Activity:
+To make an paper airplane.
+
+Insights from this team activity (Why did we perform this activity?!?)
+- Designing of our product. (prototype)
+- To see how well we follow instructions.
+- Creativity
+
+
+* Requirements describe WHAT not HOW.
+Produces one large document written in natural language containing a description of what the system will do without describing how it will do it.
+Without well written document:
+
+- Developers do not know what to build.
+- Customers do not know what to expect.
+- What to validate.
+ 
+
+In requirement analysis, we analyze, refine and scrutinize requirements to make consistent and unambiguous requirements.
+Steps:
+
+- Draw context diagram. (It is a diagram that defines the boundary between the system, or part od=f system, and its environment, showing the entities that interact with it. This diagram is a high-level view of a system.)
+- Develop prototype (optional).
+- Model the requirements.
+- Finalize the requirements.
+
+
+Business analysts assess how organizations are performing and help them improve their processes and systems. 
+They conduct research and analysis in order to come up with solutions and help to introduce these solutions to businesses and their clients.
+Basically, they help guide businesses in improving processes, products, services and software through data analysis.
+
+
+
+* Requirement elicitation is perhaps,
+- Most difficult
+- Most critical
+- Most error prone
+- Most communication intensive process of SDLC as here we have to gather all the requirements from users, - customers, and other stakeholders.
+- In order to succeed, effective customer developer partnership is a must.
+
+Advantages:
+- Helps to clarify and refine customer requirements.
+- Improves communication and collaboration between stakeholders.
+- Increases the chances of developing a software system that meets customer needs.
+- Avoids misunderstandings and helps to manage expectations.
+- Supports the identification of potential risks and problems early in the development cycle.
+- Facilitates the development of a comprehensive and accurate project plan.
+- Increases user and stakeholder confidence in the software development process.
+- Supports the identification of new business opportunities and revenue streams.
+ 
+Disadvantages:
+- Can be time-consuming and expensive.
+- Requires specialized skills and expertise.
+- May be impacted by changing business needs and requirements.
+- Can be impacted by political and organizational factors.
+- Can result in a lack of buy-in and commitment from stakeholders.
+- Can be impacted by conflicting priorities and competing interests.
+- May result in incomplete or inaccurate requirements if not properly managed.
+- Can lead to increased development costs and decreased efficiency if requirements are not well-defined.
+
+
+Top techniques of requirement elicitation include,
+
+1. Interviews: May be open-ended or structured.
+In open-ended interviews there is no pre-set agenda. Context free questions may be asked to understand the problem. In structured interview, agenda of fairly open questions is prepared. Sometimes a proper questionnaire is designed for the interview.
+Both parties have a common goal → success of the project.
+Selection of stakeholder:
+
+- Entry level personnel
+- Middle level stakeholder
+- Managers
+- Users of the software (Target audience- most imp.)
+
+
+2. Brainstorming sessions:
+This technique is used to generate new ideas and find a solution for a specific issue. The members included for brainstorming can be domain experts, subject matter experts. Multiple ideas and information give you a repository of knowledge and you can choose from different ideas.
+This session is generally conducted around the table discussion. All participants should be given an equal amount of time to express their ideas.
+
+- It is a group technique.
+- It is intended to generate lots of new ideas hence providing a platform to share views.
+- A highly trained facilitator is required to handle group bias and group conflicts.
+- Every idea is documented so that everyone can see it.
+- Finally, a document is prepared which consists of the list of requirements and their priority if possible.
+
+Brainstorming technique is used to answer the below questions:
+- What is the expectation of a system?
+- What are the risk factors that affect the proposed system development and what to do to avoid that?
+- What are the business and organization rules required to follow?
+- What are the options available to resolve the current issues?
+- What should we do so that this particular issue does not happen in the future?
+
+
+3. Facilitated Application Specification Techniques (FAST):
+Its objective is to bridge the expectation gap – the difference between what the developers think they are supposed to build and what customers think they are going to get. A team-oriented approach is developed for requirements gathering. Each attendee is asked to make a list of objects that are- 
+
+- Part of the environment that surrounds the system.
+- Produced by the system.
+- Used by the system.
+- Each participant prepares his/her list, different lists are then combined, redundant entries are eliminated, team is divided into smaller sub-teams to develop mini-specifications and finally a draft of specifications is written down using all the inputs from the meeting.
+
+4. Quality function deployment:
+In this technique customer satisfaction is of prime concern, hence it emphasizes on the requirements which are valuable to the customer. 
+3 types of requirements are identified – 
+
+-> Normal requirements – 
+In this the objective and goals of the proposed software are discussed with the customer. Example – normal requirements for a result management system may be entry of marks, calculation of results, etc
+Expected requirements – 
+These requirements are so obvious that the customer need not explicitly state them. Example – protection from unauthorized access.
+-> Exciting requirements – 
+It includes features that are beyond customer’s expectations and prove to be very satisfying when present. Example – when unauthorized access is detected, it should backup and shutdown all processes.
+The major steps involved in this procedure are –  
+- Identify all the stakeholders, e.g., Users, developers, customers etc.
+- List out all requirements from customer.
+- A value indicating degree of importance is assigned to each requirement.
+- In the end the final list of requirements is categorized as – 
+- It is possible to achieve.
+- It should be deferred and the reason for it.
+- It is impossible to achieve and should be dropped off.
+
+5. The use case approach: 
+This technique combines text and pictures to provide a better understanding of the requirements. 
+The use cases describe the ‘what’, of a system and not ‘how’. Hence, they only give a functional view of the system. 
+The components of the use case design includes three major things – Actor, Use cases, use case diagram. 
+
+* Actor – 
+It is the external agent that lies outside the system but interacts with it in some way. An actor maybe a person, machine etc. It is represented as a stick figure. Actors can be primary actors or secondary actors. 
+-> Primary actors – It requires assistance from the system to achieve a goal.
+-> Secondary actor – It is an actor from which the system needs assistance.
+* Use cases – 
+They describe the sequence of interactions between actors and the system. They capture who(actors) do what(interaction) with the system. A complete set of use cases specifies all possible ways to use the system.
+* Use case diagram – 
+- A use case diagram graphically represents what happens when an actor interacts with a system. It captures the functional aspect of the system. 
+- A stick figure is used to represent an actor.
+- An oval is used to represent a use case.
+- A line is used to represent a relationship between an actor and a use case.
+ 
+
+Features of requirements elicitation:
+
+- Stakeholder engagement: Requirements elicitation involves engaging with stakeholders such as customers, end-users, project sponsors, and subject matter experts to understand their needs and requirements.
+- Gathering information: Requirements elicitation involves gathering information about the system to be developed, the business processes it will support, and the end-users who will be using it.
+- Requirement prioritization: Requirements elicitation involves prioritizing requirements based on their importance to the project’s success.
+- Requirements documentation: Requirements elicitation involves documenting the requirements in a clear and concise manner so that they can be easily understood and communicated to the development team.
+- Validation and verification: Requirements elicitation involves validating and verifying the requirements with the stakeholders to ensure that they accurately represent their needs and requirements.
+- Iterative process: Requirements elicitation is an iterative process that involves continuously refining and updating the requirements based on feedback from stakeholders.
+- Communication and collaboration: Requirements elicitation involves effective communication and collaboration with stakeholders, project team members, and other relevant parties to ensure that the requirements are clearly understood and implemented.
+- Flexibility: Requirements elicitation requires flexibility to adapt to changing requirements, stakeholder needs, and project constraints.
+
+Advantages of Requirements Elicitation:
+- Helps to clarify and refine customer requirements.
+- Improves communication and collaboration between stakeholders.
+- Increases the chances of developing a software system that meets customer needs.
+- Avoids misunderstandings and helps to manage expectations.
+- Supports the identification of potential risks and problems early in the development cycle.
+- Facilitates the development of a comprehensive and accurate project plan.
+- Increases user and stakeholder confidence in the software development process.
+- Supports the identification of new business opportunities and revenue streams.
+
+
+Disadvantages of Requirements Elicitation:
+- Can be time-consuming and expensive.
+- Requires specialized skills and expertise.
+- May be impacted by changing business needs and requirements.
+- Can be impacted by political and organizational factors.
+- Can result in a lack of buy-in and commitment from stakeholders.
+- Can be impacted by conflicting priorities and competing interests.
+- May result in incomplete or inaccurate requirements if not properly managed.
+- Can lead to increased development costs and decreased efficiency if requirements are not well-defined.

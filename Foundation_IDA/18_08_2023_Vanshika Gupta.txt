@@ -1,0 +1,78 @@
+Introduction to Business Analysis and Agile
+
+* Agile methodology (continuous customer involvement)- It is a project management approach that prioritizes cross-functional collaboration and continous improvement.
+
+* Definition of business: An organization which provides products or services to satisfy the customer requirements/need with the objective of making profit.
+
+
+Business Analysis can be understood as a research discipline that helps you to find the business needs and identify solutions to business problems. These solutions may include the development of a software or system component, improvements in process, organizational changes or strategic planning and policy development. The purpose of business analysis is to identify solutions that meet the need for improvement.
+
+Why business analysis?
+
+- It helps you to understand the structure and the dynamics of the company.
+- It allows you to understand current problems in the target organization.
+- It helps you to identify improvement potentials and recommending solutions to enable an organization to achieve goals.
+- It helps you to identify and articulate the need for change.
+- To maximize the value delivered by an organization to its stakeholders.
+
+
+
+* A business analyst is a professional who analyzes and evaluates business operations, processes, and systems to identify areas of improvement and provide recommendations for enhancing efficiency and productivity. They work with stakeholders to understand their needs and requirements, gather and analyze data, and develop solutions to business problems. The responsibilities of a business analyst may vary depending on the industry and the experience needed. However, some of the typical key responsibilities for a business analyst are:
+
+- Identifying and communicating with key stakeholders
+- Gathering, reviewing, and analyzing business and industry data, including KPIs, financial reports, and other key metrics
+- Liaising between various business departments and groups
+- Assessing evolving business ideas
+- Communicating recommendations for improving business operations
+
+
+
+* SDLC [Software development lifecycle] - Normally, a lifecycle model covers the entire lifetime of a product. (From birth of a commercial idea to final de-installation of last release)
+
+A software/system lifecycle model is a description of the sequence of activities carried out in an SE project, and the relative order of these activities.
+It provides a fixed generic framework that can be tailored to a specific project.
+Project plan= Lifecycle model+ Project parameters
+
+Project specific parameters will include:
+
+- size (person-years) (team size)
+- budget (cost)
+- duration (deadline), etc.
+
+
+By changing the lifecycle model, we can improve and/or tradeoff:
+- Development speed (time to market)
+- Product quality
+- Project visibility
+- Administrative overhead
+- Risk exposure
+- Customer relations, etc.
+
+
+* Types of requirements:
+
+- Functional requirements: They describe what the software has to do. They are often called product features.
+- Non-Functional requirements: They are mostly quality requirements. They stipulate how well the software does, what it has to do.
+For users: (what they look for in a product)
+
+-- Availability
+-- Reliability
+-- Usability
+-- Flexibility
+
+For developers:
+
+-- Maintainability
+-- Portability
+-- Testability
+ 
+
+User requirements are written for the users and include functional and non-functional requirements.
+System requirements are derived from user requirements. The user system requirements are the parts of software requirement and specification (SRS) document.
+
+ 
+
+* Types of requirements:
+
+- Interface specification (important for the customers)
+- Feasibility study (technically and economically feasible or not)- depends on if business model is realistic or not, is there any market for the product or not, is product's cost and schedule assumption realistic or not.

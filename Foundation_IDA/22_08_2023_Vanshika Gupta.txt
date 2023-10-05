@@ -1,0 +1,27 @@
+Introduction to Business Analysis and Agile
+
+
+Requirement Traceablity: It ensures that each business need is tied to an actial requiremnent, and that each requirement is tied to a deliverable.It is an ability to trace a requirement forwards and backwards in the software life-development lifecycle.
+
+* Basically, there needs/requirements are tied/mapped to test cases or defects/failure and reverse engineering can be done to find the requirement where the defect came from.
+
+Scrum flow:
+- impediment log-> when in the development stage someone is stuck.
+- epic -> high-level description of requirement. (very detailed oriented)/ logical body of work
+- user story -> (time-bounded)
+- sprint backlog -> set of user-stories
+- features -> logical breakdown of epic
+- tasks -> tasks created under each user story should be completed within that same sprint.
+- burnup chart -> how much work has been completed and total scope of the project.
+- burndown chart -> amount of work remaining in a project (remaining effort)
+
+* If the tasks in a user story are not completed then move it to the next sprint or backlog.
+
+
+Timelines:
+- sprint planning -> 2-4 hrs
+- sprint review -> 30 mins
+- sprint stand-up -> 15 mins
+- sprint retro -> 30 mins
+
+sprint -> 2-4 weeks 

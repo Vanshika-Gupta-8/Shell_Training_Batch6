@@ -1,0 +1,33 @@
+Introduction to Business Analysis and Aglie
+
+
+For any enterprise question-
+Epic-> Features-> Task-> Issue
+
+In Aglie:
+Feature-> Epic -> User Story -> Task
+
+Testing-
+3 types of testing:
+-> white-box: where who knows coding
+-> black-box: where who doesn't know how to code
+-> grey-box -> automation-based
+
+Stages of testing:
+Test Strategy (For application) -> Test Planning (For each sprint) -> Test Design (For each user story) -> Test Environment (QA environment) -> Test Execution -> Defect Report -> Test Closure
+
+* Here, test and summary report -> record of all test cases
+
+
+Unit testing (done using J-unit):
+- integration testing -> manual automatic -> done using selenium testing (pytest)
+- system testing (functional)
+- regression testing
+- smoke testing
+- sanity testing
+- adhoc testing
+
+Non-functional Testing (done suing J-meter Neoload):
+- load testing
+- stress testing
+- end-to-end testing
